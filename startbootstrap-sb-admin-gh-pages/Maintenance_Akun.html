@@ -122,7 +122,7 @@
                                                         <div class="card-header">Profile Picture</div>
                                                         <div class="card-body text-center">
                                                             <!-- FOTO -->
-                                                            <img class="img-account-profile rounded-circle mb-2"
+                                                            <img class="img-account-profile rounded-circle"
                                                                 src="http://bootdey.com/img/Content/avatar/avatar1.png"
                                                                 alt="">
                                                             <!-- UKURAN MINIMAL DAN JENIS FILE-->
@@ -139,7 +139,7 @@
                                                     <div class="card mb-4">
                                                         <div class="card-header">Pastikan Isi Data Dengan Benar</div>
                                                         <div class="card-body">
-                                                            <form>
+                                                            <>
                                                                 <!-- Form Group (username)-->
                                                                 <div class="col-sm-5 mx-auto">
                                                                     <label class="small mb-1" for="inputUsername">NIM
@@ -155,8 +155,7 @@
                                                                         <label class="small mb-1"
                                                                             for="inputFirstName">Nama</label>
                                                                         <input class="form-control" id="inputFirstName"
-                                                                            type="text"
-                                                                            placeholder="Enter your first name"
+                                                                            type="text" placeholder="Masukan Nama"
                                                                             value="Valerie">
                                                                     </div>
                                                                     <!-- Form Group (last name)-->
@@ -164,8 +163,7 @@
                                                                         <label class="small mb-1"
                                                                             for="inputLocation">Program Studi</label>
                                                                         <input class="form-control" id="inputLocation"
-                                                                            type="text"
-                                                                            placeholder="Enter your location"
+                                                                            type="text" placeholder="Program Studi"
                                                                             value="S1 Psikologi">
                                                                     </div>
                                                                 </div>
@@ -174,11 +172,10 @@
                                                                     <!-- Form Group (organization name)-->
                                                                     <div class="col-md-6">
                                                                         <label class="small mb-1"
-                                                                            for="inputOrgName">Alamat Email</label>
-                                                                        <input class="form-control" id="inputOrgName"
-                                                                            type="text"
-                                                                            placeholder="Enter your organization name"
-                                                                            value="ana@gmail.com">
+                                                                            for="alamat">Alamat</label>
+                                                                        <input class="form-control" id="alamat"
+                                                                            type="text" placeholder="Masukan Alamat"
+                                                                            value="Cibiru">
                                                                     </div>
                                                                     <!-- Form Group (location)-->
                                                                     <div class="col-md-6">
@@ -190,9 +187,8 @@
                                                                     </div>
 
                                                                 </div>
-                                                                <!-- Form Group (email address)-->
+                                                                <!-- Form Group-->
                                                                 <div class="row gx-3 mb-3">
-
                                                                     <div class="col-md-6">
                                                                         <label class="small mb-1"
                                                                             for="inputEmailAddress">Alamat Email</label>
@@ -201,10 +197,8 @@
                                                                             placeholder="Enter your email address"
                                                                             value="name@example.com">
                                                                     </div>
-
                                                                     <div class="col-md-6">
-                                                                        <label class="small-mb-1 col-form-label"
-                                                                            for="inputLocation">
+                                                                        <label class="small mb-1" for="inputLocation">
                                                                             Jenis Kelamin
                                                                         </label>
                                                                         <div class="form-control">
@@ -221,61 +215,134 @@
 
                                                                 <!-- Form Row-->
                                                                 <div class="row gx-3 mb-3">
-                                                                    <!-- Form Group (phone number)-->
-                                                                    <div class="col-md-6">
-                                                                        <label class="small mb-1" for="inputPhone">No
-                                                                            Telepon
-                                                                            number</label>
-                                                                        <input class="form-control" id="inputPhone"
-                                                                            type="tel"
-                                                                            placeholder="Enter your phone number"
-                                                                            value="555-123-4567">
-                                                                    </div>
-                                                                    <!-- Form Group (birthday)-->
+                                                                    <!-- Form Group (Tempat Lahir)-->
                                                                     <div class="col-md-6">
                                                                         <label class="small mb-1"
-                                                                            for="inputBirthday">Birthday</label>
+                                                                            for="inputPhone">Tempat Lahir
+                                                                        </label>
+                                                                        <input class="form-control" id="inputPhone"
+                                                                            type="text" placeholder="Tempat Lahir"
+                                                                            value="Bandung">
+                                                                    </div>
+                                                                    <!-- Form Group (Tanggal Lahir)-->
+                                                                    <div class="col-md-6">
+                                                                        <label class="small mb-1"
+                                                                            for="tanggalLahir">Tanggal Lahir</label>
                                                                         <input class="form-control" id="inputBirthday"
-                                                                            type="text" name="birthday"
-                                                                            placeholder="Enter your birthday"
-                                                                            value="06/10/1988">
+                                                                            type="date" name="tanggalLahir
+                                                                            placeholder=" Enter your birthday"
+                                                                            value="">
                                                                     </div>
                                                                 </div>
+
+                                                                <!-- Form Group-->
+                                                                <div class="row gx-3 mb-3">
+
+                                                                    <div class="col-md-6">
+                                                                        <label class="small mb-1" for="telepon">No
+                                                                            Telepon</label>
+                                                                        <input class="form-control" id="telepon"
+                                                                            type="number"
+                                                                            placeholder="Masukan Nomor Telepon"
+                                                                            value="08888888646">
+                                                                    </div>
+
+                                                                    <div class="col-md-6">
+                                                                        <label class="small mb-1" for="kerja">Tempat
+                                                                            Kerja</label>
+                                                                        <input class="form-control" id="kerja"
+                                                                            type="text" placeholder="Tempat Kerja"
+                                                                            value="PT.anu">
+                                                                    </div>
+                                                                </div>
+
+                                                                <!-- form group -->
+                                                                <div class="row gx-3 mb-3">
+
+                                                                    <div class="col-md-6">
+                                                                        <label class="small mb-1" for="ayah">Nama
+                                                                            Ayah</label>
+                                                                        <input class="form-control" id="ayah"
+                                                                            type="text" placeholder="Nama Ayah"
+                                                                            value="Sunardi">
+                                                                    </div>
+
+                                                                    <div class="col-md-6">
+                                                                        <label class="small mb-1" for="ibu">Nama
+                                                                            Ibu</label>
+                                                                        <input class="form-control" id="ibu" type="text"
+                                                                            placeholder="Nama Ibu" value="Surti">
+                                                                    </div>
+                                                                </div>
+
+                                                                <!-- Form Row-->
+                                                                <div class="row gx-3 mb-3">
+                                                                    <!-- Form Group (Tempat Lahir)-->
+                                                                    <div class="col-md-6">
+                                                                        <label class="small mb-1" for="masuk">Tahun
+                                                                            Masuk
+                                                                        </label>
+                                                                        <input class="form-control" id="inputPhone"
+                                                                            type="date" placeholder="Tahun Masuk"
+                                                                            value="">
+                                                                    </div>
+                                                                    <!-- Form Group (Tanggal Lahir)-->
+                                                                    <div class="col-md-6">
+                                                                        <label class="small mb-1" for="lulus">Tanggal
+                                                                            Lulus</label>
+                                                                        <input class="form-control" id="lulus"
+                                                                            type="date" name="lulus
+                                                                        placeholder="" value="">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class=" col-sm-5 mx-auto">
+                                                                        <label class="small mb-1" for="moto">Moto Hidup
+                                                                        </label>
+                                                                        <input class="form-control" id="moto"
+                                                                            type="text" placeholder="Moto"
+                                                                            value="aku mau jadi batman">
+                                                                    </div>
+                                                                </div>
+
+
+
                                                                 <!-- Save changes button-->
-                                                                <button class="btn btn-primary" type="button">Save
+                                                                <button class=" col-sm-5 mx-auto btn btn-primary"
+                                                                    type="button">Save
                                                                     changes</button>
-                                                            </form>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </form>
                                 </div>
-
-
-
-
-                                </form>
                             </div>
                         </div>
                     </div>
-
-
-            </main>
-            <footer class="py-4 bg-light mt-auto">
-                <div class="container-fluid px-4">
-                    <div class="d-flex align-items-center justify-content-between small">
-                        <div class="text-muted">Copyright &copy; Wisuda 2023</div>
-                        <div>
-                            <a href="#">Privacy Policy</a>
-                            &middot;
-                            <a href="#">Terms &amp; Conditions</a>
-                        </div>
-                    </div>
                 </div>
-            </footer>
+                </form>
         </div>
+
+
+
+
+        </form>
+    </div>
+    </div>
+    </div>
+
+
+    </main>
+    <footer class="py-4 bg-light mt-auto">
+        <div class="container-fluid px-4">
+            <div class="d-flex align-items-center justify-content-between small">
+                <div class="text-muted">Copyright &copy; Wisuda 2023</div>
+                <div>
+                    <a href="#">Privacy Policy</a>
+                    &middot;
+                    <a href="#">Terms &amp; Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
