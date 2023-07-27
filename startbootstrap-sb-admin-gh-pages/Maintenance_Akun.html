@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <!-- <meta http-equiv="refresh" content="7"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Dashboard - SB Admin</title>
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="sb-nav-fixed">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <!-- Navbar Brand-->
+        <a class="navbar-brand ps-3" href="index.html">
+            <div class="">Sistem Wisuda</div>
+
+        </a>
+        <!-- Sidebar Toggle-->
+        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
+                class="fas fa-bars"></i></button>
+        <!-- Navbar Search-->
+        <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+
+        </form>
+        <!-- Navbar-->
+        <ul class="navbar-nav ms-auto me-3">
+            <button type="button" class="btn btn-outline-danger">
+                <a href="logout.html" style="color: bisque; text-decoration: none;">Logout</a>
+            </button>
+        </ul>
+    </nav>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <div class="sb-sidenav-menu-heading">Dashboard Menu</div>
+                        <a class="nav-link" href="Maintenance_Fakultas.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Maintainance Fakultas
+                        </a>
+                        <a class="nav-link" href="Maintenance_Periode.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Maintainance Periode
+                        </a>
+                        <a class="nav-link" href="Maintenance_Prodi.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Maintainance Prodi
+                        </a>
+                        <a class="nav-link" href="Maintenance_Akun.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Maintainance Akun
+                        </a>
+                        <a class="nav-link" href="Maintenance_Wisuda.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Maintainance Wisuda
+                        </a>
+                        <a class="nav-link" href="Menu_Statistik.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Menu Statistik Wisuda
+                        </a>
+                        <a class="nav-link" href="cetakLaporan.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Menu Cetak Laporan
+                        </a>
+
+
+
+                        <!-- <div class="sb-sidenav-menu-heading">Addons</div>
+                        <a class="nav-link" href="charts.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                            Charts
+                        </a>
+                        <a class="nav-link" href="tables.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                            Tables
+                        </a> -->
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container mt-5 mb-5 " style="background: rgb(240, 239, 245)">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="text-center my-4">Maintenance</h3>
+                            <div class="card border-0 shadow-sm rounded">
+                                <div class="card-body">
+                                    <form class="text-center action=" {{ route('') }}" method="POST"
+                                        enctype="multipart/form-data">
+
+
+                                        <div class="container-xl px-4 mt-4">
+                                            <!-- Account page navigation-->
+                                            <nav class="nav nav-borders">
+                                                <a class="nav-link active ms-0"
+                                                    href="https://www.bootdey.com/snippets/view/bs5-edit-profile-account-details"
+                                                    target="__blank">Profile</a>
+                                                <a class="nav-link"
+                                                    href="https://www.bootdey.com/snippets/view/bs5-profile-billing-page"
+                                                    target="__blank">Billing</a>
+                                                <a class="nav-link"
+                                                    href="https://www.bootdey.com/snippets/view/bs5-profile-security-page"
+                                                    target="__blank">Security</a>
+                                                <a class="nav-link"
+                                                    href="https://www.bootdey.com/snippets/view/bs5-edit-notifications-page"
+                                                    target="__blank">Notifications</a>
+                                            </nav>
+                                            <hr class="mt-0 mb-4">
+                                            <div class="row">
+                                                <div class="col-xl-4">
+                                                    <!-- Profile picture card-->
+                                                    <div class="card mb-4 mb-xl-0">
+                                                        <div class="card-header">Profile Picture</div>
+                                                        <div class="card-body text-center">
+                                                            <!-- FOTO -->
+                                                            <img class="img-account-profile rounded-circle mb-2"
+                                                                src="http://bootdey.com/img/Content/avatar/avatar1.png"
+                                                                alt="">
+                                                            <!-- UKURAN MINIMAL DAN JENIS FILE-->
+                                                            <div class="small font-italic text-muted mb-4">JPG or PNG no
+                                                                larger than 5 MB</div>
+                                                            <!-- Profile picture upload button-->
+                                                            <button class="btn btn-primary" type="button">Upload new
+                                                                image</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-8">
+                                                    <!-- Account details card-->
+                                                    <div class="card mb-4">
+                                                        <div class="card-header">Data Peserta</div>
+                                                        <div class="card-body">
+                                                            <form>
+                                                                <!-- Form Group (username)-->
+                                                                <div class="mb-3">
+                                                                    <label class="small mb-1"
+                                                                        for="inputUsername">Pastikan Data Diisi Dengan
+                                                                        Benar
+                                                                    </label>
+                                                                    <input class="form-control" id="inputUsername"
+                                                                        type="text" placeholder="Enter your username"
+                                                                        value="username">
+                                                                </div>
+                                                                <!-- Form Row-->
+                                                                <div class="row gx-3 mb-3">
+                                                                    <!-- Form Group (first name)-->
+                                                                    <div class="col-md-6">
+                                                                        <label class="small mb-1"
+                                                                            for="inputFirstName">Nama</label>
+                                                                        <input class="form-control" id="inputFirstName"
+                                                                            type="text"
+                                                                            placeholder="Enter your first name"
+                                                                            value="Valerie">
+                                                                    </div>
+                                                                    <!-- Form Group (last name)-->
+                                                                    <div class="col-md-6">
+                                                                        <label class="small mb-1"
+                                                                            for="inputLastName">Nim</label>
+                                                                        <input class="form-control" id="inputLastName"
+                                                                            type="number"
+                                                                            placeholder="Enter your last name"
+                                                                            value="119554551">
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Form Row        -->
+                                                                <div class="row gx-3 mb-3">
+                                                                    <!-- Form Group (organization name)-->
+                                                                    <div class="col-md-6">
+                                                                        <label class="small mb-1"
+                                                                            for="inputOrgName">Password</label>
+                                                                        <input class="form-control" id="inputOrgName"
+                                                                            type="password"
+                                                                            placeholder="Enter your organization name"
+                                                                            value="Start Bootstrap">
+                                                                    </div>
+                                                                    <!-- Form Group (location)-->
+                                                                    <div class="col-md-6">
+                                                                        <label class="small mb-1"
+                                                                            for="inputLocation">Program Studi</label>
+                                                                        <input class="form-control" id="inputLocation"
+                                                                            type="text"
+                                                                            placeholder="Enter your location"
+                                                                            value="S1 Psikologi">
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Form Group (email address)-->
+                                                                <div class="mb-3">
+                                                                    <label class="small mb-1"
+                                                                        for="inputEmailAddress">Alamat Email</label>
+                                                                    <input class="form-control" id="inputEmailAddress"
+                                                                        type="email"
+                                                                        placeholder="Enter your email address"
+                                                                        value="name@example.com">
+                                                                </div>
+                                                                <!-- Form Row-->
+                                                                <div class="row gx-3 mb-3">
+                                                                    <!-- Form Group (phone number)-->
+                                                                    <div class="col-md-6">
+                                                                        <label class="small mb-1" for="inputPhone">No
+                                                                            Telepon
+                                                                            number</label>
+                                                                        <input class="form-control" id="inputPhone"
+                                                                            type="tel"
+                                                                            placeholder="Enter your phone number"
+                                                                            value="555-123-4567">
+                                                                    </div>
+                                                                    <!-- Form Group (birthday)-->
+                                                                    <div class="col-md-6">
+                                                                        <label class="small mb-1"
+                                                                            for="inputBirthday">Birthday</label>
+                                                                        <input class="form-control" id="inputBirthday"
+                                                                            type="text" name="birthday"
+                                                                            placeholder="Enter your birthday"
+                                                                            value="06/10/1988">
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Save changes button-->
+                                                                <button class="btn btn-primary" type="button">Save
+                                                                    changes</button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+
+
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+
+            </main>
+            <footer class="py-4 bg-light mt-auto">
+                <div class="container-fluid px-4">
+                    <div class="d-flex align-items-center justify-content-between small">
+                        <div class="text-muted">Copyright &copy; Wisuda 2023</div>
+                        <div>
+                            <a href="#">Privacy Policy</a>
+                            &middot;
+                            <a href="#">Terms &amp; Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    <script src="assets/demo/chart-area-demo.js"></script>
+    <script src="assets/demo/chart-bar-demo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
+        crossorigin="anonymous"></script>
+    <script src="js/datatables-simple-demo.js"></script>
+</body>
+
+</html>

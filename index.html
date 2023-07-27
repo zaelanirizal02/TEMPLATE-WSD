@@ -1,0 +1,290 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="refresh" content="2"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .nav-background {
+            /* GAMBAR BACKDROUND NAVBAR */
+            background-image: url("image/NGABUBURIT.PNG");
+            background-size: cover;
+            background-position: ;
+            background-repeat: no-repeat;
+
+
+            /* Workaround for some mobile browsers */
+            /* min-height: 100%; */
+        }
+    </style>
+
+    <title>Wisuda</title>
+</head>
+
+<body style="background-color: rgb(19, 88, 88);">
+
+    <div class="container-fluid" style="padding: 10px;  border: 1px solid #e4cccc; ">
+        <div class="row">
+            <div class="col text-right">
+                <button type="button" class="btn btn-outline-danger">
+                    <a href="logout.html" style="color: bisque; text-decoration: none;">Logout</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- GANTI BACKGROUND IMAGE -->
+    <div>
+        <nav class="navbar navbar-expand-sm bg-light navbar-light nav-background" style="height: 10%;">
+        </nav>
+    </div>
+
+
+    <!-- SIDEBAR -->
+
+    <div class="container-fluid" style="padding: 5px 1em 0 ;">
+        <div class="row">
+            <div class="col-sm-3  bg-light" style="border: 1px solid #0c0303;"">
+            <div class=" border-end bg-white" id="sidebar-wrapper">
+                <div class="p-1 text-center  bg-light">
+                    <dt>
+                        <h5>BERANDA ADMIN</h5>
+                    </dt>
+                </div>
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action list-group-item-light p-1"
+                        href="#!">Maintenance</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-1"
+                        href="#!">Maintenance</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-1"
+                        href="#!">Maintenance</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-1"
+                        href="#!">Maintenance</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-1"
+                        href="#!">Maintenance</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-1"
+                        href="#!">Maintenance</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-1"
+                        href="#!">Maintenance</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-1"
+                        href="#!">Maintenance</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-1"
+                        href="#!">Maintenance</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-1"
+                        href="#!">Maintenance</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-1"
+                        href="#!">Maintenance</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-1"
+                        href="#!">Maintenance</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row bg-light">
+                <div class="col-sm-1" style="border: 1px solid black;">
+                    tes
+                </div>
+                <div class="col-md-8" style="border: 1px solid black;">
+                    <div class="" style="font-size: small; bold">
+                        <dt>
+                            <h5>MAINTENANCE VERIVIKASI PERSYARATAN WISUDA</h5>
+                        </dt>
+                    </div>
+                </div>
+                <div class="col-sm-3" style="border: 1px solid black;">
+                    tes
+                </div>
+                <div class="">
+
+                </div>
+            </div>
+
+            <!-- PENCARIAN -->
+
+            <div class="row p-1">
+                <div class="p-2 border border-dark col-sm-2 bg-light">
+                    <div class="text-center form-group">
+                        <i class="fas fa-search"></i>
+                        <label for="uname">Pencarian</label>
+                        <input type="text" class="form-control" id="uname" placeholder="data kunci" name="uname"
+                            required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                </div>
+
+                <!-- BERDASARKAN -->
+
+                <div class="p-2 border border-dark col-sm-3 bg-light ">
+                    <div class="text-center form-group">
+                        <i class="fas fa-bars"></i>
+                        <label for="uname">Berdasarkan</label>
+                        <div>
+
+                            <select class="col-sm-6 form-select"
+                                style="width: 80%; height: 40; background-color: #f1cece;">
+                                <option>click</option>
+                                <option>test 2</option>
+                                <option>test 3</option>
+                                <option>test 4</option>
+                            </select>
+                            <button type="button" class="btn btn-outline-info btn-light">Search</button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- URUTAN -->
+                <div class="p-2 border border-dark col-sm-3 bg-light ">
+                    <div class="text-center form-group">
+                        <i class="fas fa-skating"></i>
+                        <label for="uname">Urutan</label>
+                        <div>
+
+                            <select class="col form-select" style="width: 80%; height: 40; background-color: #f1cece;">
+                                <option>click</option>
+                                <option>test 2</option>
+                                <option>test 3</option>
+                                <option>test 4</option>
+                            </select>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- STATUS -->
+                <div class="p-2 border border-dark col-sm-2 bg-light ">
+                    <div class="text-center form-group">
+                        <i class="fas fa-calendar"></i>
+                        <label for="uname">Status</label>
+                        <div>
+
+                            <select class="col form-select" style="width: 80%; height: 40; background-color: #f1cece;">
+                                <option>click</option>
+                                <option>test 2</option>
+                                <option>test 3</option>
+                                <option>test 4</option>
+                            </select>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- PERIODE -->
+                <div class="p-2 border border-dark col-sm-2 bg-light ">
+                    <div class="text-center form-group">
+                        <i class="far fa-clock"></i>
+                        <label for="uname" style="font-size: 12;">Periode Wisuda</label>
+                        <div>
+
+                            <select class="col-sm-12 form-select"
+                                style="width: 80%; height: 40; background-color: #f1cece;">
+                                <option>click</option>
+                                <option>test 2</option>
+                                <option>test 3</option>
+                                <option>test 4</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="container">
+                    <h2>Contextual Classes</h2>
+                    <p>Contextual classes can be used to color the table, table rows or table cells. The classes that
+                        can be used are:
+                        .table-primary, .table-success, .table-info, .table-warning, .table-danger, .table-active,
+                        .table-secondary,
+                        .table-light and .table-dark:</p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Firstname</th>
+                                <th>Lastname</th>
+                                <th>Email</th>
+                                <th>Email</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Default</td>
+                                <td>Defaultson</td>
+                                <td>def@somemail.com</td>
+                            </tr>
+                            <tr class="table-primary">
+                                <td>Primary</td>
+                                <td>Joe</td>
+                                <td>joe@example.com</td>
+                            </tr>
+                            <tr class="table-success">
+                                <td>Success</td>
+                                <td>Doe</td>
+                                <td>john@example.com</td>
+                            </tr>
+                            <tr class="table-danger">
+                                <td>Danger</td>
+                                <td>Moe</td>
+                                <td>mary@example.com</td>
+                            </tr>
+                            <tr class="table-info">
+                                <td>Info</td>
+                                <td>Dooley</td>
+                                <td>july@example.com</td>
+                            </tr>
+                            <tr class="table-warning">
+                                <td>Warning</td>
+                                <td>Refs</td>
+                                <td>bo@example.com</td>
+                            </tr>
+                            <tr class="table-active">
+                                <td>Active</td>
+                                <td>Activeson</td>
+                                <td>act@example.com</td>
+                            </tr>
+                            <tr class="table-secondary">
+                                <td>Secondary</td>
+                                <td>Secondson</td>
+                                <td>sec@example.com</td>
+                            </tr>
+                            <tr class="table-light">
+                                <td>Light</td>
+                                <td>Angie</td>
+                                <td>angie@example.com</td>
+                            </tr>
+                            <tr class="table-dark text-dark">
+                                <td>Dark</td>
+                                <td>Bo</td>
+                                <td>bo@example.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+startbootstrap-sb-admin-gh-pages
+
+</html>
