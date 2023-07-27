@@ -12,6 +12,18 @@
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <style>
+        .nav-background {
+            /* GAMBAR BACKDROUND NAVBAR */
+            background-image: url("image/NGABUBURIT.PNG");
+            background-size: cover;
+            background-repeat: no-repeat;
+
+
+            /* Workaround for some mobile browsers */
+            /* min-height: 100%; */
+        }
+    </style>
 </head>
 
 <body class="sb-nav-fixed">
@@ -35,6 +47,7 @@
             </button>
         </ul>
     </nav>
+
     <div id="layoutSidenav">
         <div id="layoutSidenav_nav">
             <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
@@ -69,29 +82,25 @@
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                             Menu Cetak Laporan
                         </a>
-
-
-
-                        <!-- <div class="sb-sidenav-menu-heading">Addons</div>
-                        <a class="nav-link" href="charts.html">
-                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                            Charts
-                        </a>
-                        <a class="nav-link" href="tables.html">
-                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                            Tables
-                        </a> -->
                     </div>
                 </div>
 
             </nav>
         </div>
+
         <div id="layoutSidenav_content">
             <main>
+
+                <!-- BACKGROUND GAMBAR -->
+                <div class="col-md-12">
+                    <nav class="navbar navbar-expand-sm bg-light navbar-light nav-background" style="height: 100px;">
+                    </nav>
+                </div>
                 <div class="container mt-5 mb-5 " style="background: rgb(240, 239, 245)">
+                    <!-- CONTENT AKUN -->
                     <div class="row">
                         <div class="col-md-12">
-                            <h3 class="text-center my-4">Maintenance Akun</h3>
+
                             <div class="card border-0 shadow-sm rounded">
                                 <div class="card-body">
                                     <form class="text-center action=" {{ route('') }}" method="POST"
@@ -99,27 +108,11 @@
 
 
                                         <div class="container-xl px-4 mt-4">
-                                            <!-- Account page navigation-->
-                                            <nav class="nav nav-borders">
-                                                <a class="nav-link active ms-0"
-                                                    href="https://www.bootdey.com/snippets/view/bs5-edit-profile-account-details"
-                                                    target="__blank">Profile</a>
-                                                <a class="nav-link"
-                                                    href="https://www.bootdey.com/snippets/view/bs5-profile-billing-page"
-                                                    target="__blank">Billing</a>
-                                                <a class="nav-link"
-                                                    href="https://www.bootdey.com/snippets/view/bs5-profile-security-page"
-                                                    target="__blank">Security</a>
-                                                <a class="nav-link"
-                                                    href="https://www.bootdey.com/snippets/view/bs5-edit-notifications-page"
-                                                    target="__blank">Notifications</a>
-                                            </nav>
-                                            <hr class="mt-0 mb-4">
+
                                             <div class="row">
                                                 <div class="col-xl-4">
                                                     <!-- Profile picture card-->
                                                     <div class="card mb-4 mb-xl-0">
-                                                        <div class="card-header">Profile Picture</div>
                                                         <div class="card-body text-center">
                                                             <!-- FOTO -->
                                                             <img class="img-account-profile rounded-circle"
@@ -139,7 +132,7 @@
                                                     <div class="card mb-4">
                                                         <div class="card-header">Pastikan Isi Data Dengan Benar</div>
                                                         <div class="card-body">
-                                                            <>
+                                                            <div>
                                                                 <!-- Form Group (username)-->
                                                                 <div class="col-sm-5 mx-auto">
                                                                     <label class="small mb-1" for="inputUsername">NIM
@@ -304,6 +297,7 @@
                                                                             value="aku mau jadi batman">
                                                                     </div>
                                                                 </div>
+                                                                <hr>
 
 
 
@@ -311,6 +305,7 @@
                                                                 <button class=" col-sm-5 mx-auto btn btn-primary"
                                                                     type="button">Save
                                                                     changes</button>
+                                                            </div>
                                     </form>
                                 </div>
                             </div>
